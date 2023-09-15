@@ -1,4 +1,23 @@
-*,
+* {
+  font-family: 'Oswald';
+}
+
+h1 {
+font-family: 'Oswald Bold';
+}
+
+h2 {
+  font-family: 'Oswald Bold';
+}
+
+h3 {
+  font-family: 'Oswald Bold';
+}
+
+section {
+  font-family: 'Oswald Bold';
+}
+
 *::before,
 *::after {
   box-sizing: content-box;
@@ -8,4 +27,23 @@ body {
   margin: 0;
   background-color: lightgray;
   font-family: sans-serif;
+}
+
+@font-face {
+  font-family: 'Oswald';
+  src: url(Oswald-Regular.otf);
+}
+
+@font-face {
+  font-family: 'Oswald Bold';
+  src: url(Oswald-Bold.otf);
+}
+
+.grid-system {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.grid-1 {
+  background-image: src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbSNP1SwDjNz7-6ci609O0tX275pf47gDB9Q&usqp=CAU";
 }
