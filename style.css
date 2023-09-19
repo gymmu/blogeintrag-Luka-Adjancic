@@ -1,4 +1,5 @@
 * {
+  /*damit ändere ich von allen Buchstaben den Font zu Oswald*/
   font-family: 'Oswald';
 }
 
@@ -29,6 +30,7 @@ body {
   font-family: sans-serif;
 }
 
+/*damit fügt man einen eigenen Font hinzu*/
 @font-face {
   font-family: 'Oswald';
   src: url(Oswald-Regular.otf);
@@ -40,10 +42,13 @@ body {
 }
 
 .grid-system {
-  text-decoration: none;
-  text-transform: uppercase;
+  /*hab ich aus einer website kopiert, 5vw bedeuted 5 viewport width*/
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 5vw);
+  grid-gap: 15px;
 }
 
-.grid-1 {
-  background-image: src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbSNP1SwDjNz7-6ci609O0tX275pf47gDB9Q&usqp=CAU";
+#grid-1 {
+
 }
