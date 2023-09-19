@@ -58,3 +58,35 @@ body {
   width: 50vw;
   height: auto;
 }
+
+.OnePiece-Title iframe {
+text-align: center;
+width: 60vw;
+height: 35vw;
+}
+
+#OnePiece-Text {
+margin-left: 20%;
+margin-right: 20%;
+}
+
+#OnePiece-Text h3 {
+  text-align: left;
+}
+
+#OnePiece-Text p {
+  text-align: left;
+}
+
+#OnePiece-Text ul {
+  text-align: left;
+}
+
+#OnePiece-Text ul li {
+  text-align: left;
+}
+
+#OnePiece-Text a {
+  text-decoration: none;
+  color: black;
+}
