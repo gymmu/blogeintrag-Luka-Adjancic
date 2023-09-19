@@ -1,6 +1,7 @@
 * {
   /*damit ändere ich von allen Buchstaben den Font zu Oswald*/
   font-family: 'Oswald';
+  text-align: center;
 }
 
 h1 {
@@ -41,14 +42,19 @@ body {
   src: url(Oswald-Bold.otf);
 }
 
-.grid-system {
-  /*hab ich aus einer website kopiert, 5vw bedeuted 5 viewport width*/
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(8, 5vw);
-  grid-gap: 15px;
+.OnePiece {
+  /*kopiert aus dem Internet, ich hab es aber so umgeändert das es auf Handy und Pc gut aussieht mit view width*/
+  flex: 0 0 40%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  margin-left: 24.6vw;
+  margin-right: 24.6vw;
 }
 
-#grid-1 {
-
+.OnePiece a img {
+  width: 50vw;
+  height: auto;
 }
