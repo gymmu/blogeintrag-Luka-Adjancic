@@ -77,7 +77,7 @@ body {
   height: auto;
 }
 
-.OnePiece-Title iframe {
+.Site-Title iframe {
 text-align: center;
 width: 60vw;
 height: 35vw;
@@ -104,11 +104,6 @@ color: white;
 
 #OnePiece-Text ul li {
   text-align: left;
-}
-
-#OnePiece-Text a {
-  text-decoration: none;
-  color: black;
 }
 
 .navbar {
@@ -148,7 +143,7 @@ align-items: center;
   margin-right: 4rem;
 }
 
-.navbar ul li a svg {
+#Icon {
   min-width: 2rem;
   margin: 0 1.5rem;
   fill: white;
@@ -171,11 +166,38 @@ align-items: center;
 }
 
 /*damit die Icons eine andere Farbe bekommen*/
-.navbar ul li a svg {
+#Icon {
   filter: grayscale(0%) opacity(1);
   fill: rgb(121, 246, 255);
 }
 
 .navbar:hover ul li a span {
   display: block;
+}
+
+#AoT-Text {
+margin-left: 20%;
+margin-right: 20%;
+margin-top: 15%;
+color: white;
+}
+  
+#AoT-Text h3 {
+text-align: left;
+}
+  
+#AoT-Text p {
+text-align: left;
+}
+  
+#AoT-Text ul {
+text-align: left;
+}
+  
+#AoT-Text ul li {
+text-align: left;
+}
+
+#rot {
+  color: red;
 }
