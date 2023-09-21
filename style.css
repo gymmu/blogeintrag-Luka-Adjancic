@@ -1,4 +1,24 @@
-*,
+* {
+  /*damit ändere ich von allen Buchstaben den Font zu Oswald*/
+  font-family: 'Oswald';
+}
+
+h1 {
+font-family: 'Oswald Bold';
+}
+
+h2 {
+  font-family: 'Oswald Bold';
+}
+
+h3 {
+  font-family: 'Oswald Bold';
+}
+
+section {
+  font-family: 'Oswald Bold';
+}
+
 *::before,
 *::after {
   box-sizing: content-box;
@@ -8,4 +28,27 @@ body {
   margin: 0;
   background-color: lightgray;
   font-family: sans-serif;
+}
+
+/*damit fügt man einen eigenen Font hinzu*/
+@font-face {
+  font-family: 'Oswald';
+  src: url(Oswald-Regular.otf);
+}
+
+@font-face {
+  font-family: 'Oswald Bold';
+  src: url(Oswald-Bold.otf);
+}
+
+.grid-system {
+  /*hab ich aus einer website kopiert, 5vw bedeuted 5 viewport width*/
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 5vw);
+  grid-gap: 15px;
+}
+
+#grid-1 {
+
 }
