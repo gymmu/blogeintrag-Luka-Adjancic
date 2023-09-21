@@ -4,20 +4,32 @@
   text-align: center;
 }
 
+.background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(https://cdn.wallpapersafari.com/98/67/lTJwhP.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+}
 h1 {
 font-family: 'Oswald Bold';
+color: white;
 }
 
 h2 {
   font-family: 'Oswald Bold';
+  color: white;
 }
 
 h3 {
   font-family: 'Oswald Bold';
+  color: white;
 }
 
 section {
   font-family: 'Oswald Bold';
+  color: white;
 }
 
 *::before,
@@ -27,8 +39,7 @@ section {
 
 body {
   margin: 0;
-  background-color: lightgray;
-  font-family: sans-serif;
+  background-color: rgb(1, 29, 69);
 }
 
 /*damit fügt man einen eigenen Font hinzu*/
@@ -42,19 +53,26 @@ body {
   src: url(Oswald-Bold.otf);
 }
 
-.OnePiece {
+.Box {
   /*kopiert aus dem Internet, ich hab es aber so umgeändert das es auf Handy und Pc gut aussieht mit view width*/
+  /*vw bedeutet view width ist wichtig für verschiedene Bildschirme*/
   flex: 0 0 40%;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px solid black;
-  margin-left: 24.6vw;
-  margin-right: 24.6vw;
+  border: 10px solid black;
+  margin-left: 23.2vw;
+  margin-right: 23.2vw;
+  background-color: aliceblue;
+  border-radius: 2%;
 }
 
-.OnePiece a img {
+.Box h2 {
+  color: black;
+}
+
+.Box a img {
   width: 50vw;
   height: auto;
 }
@@ -66,8 +84,10 @@ height: 35vw;
 }
 
 #OnePiece-Text {
+margin-top: 20%;
 margin-left: 20%;
 margin-right: 20%;
+color: white;
 }
 
 #OnePiece-Text h3 {
@@ -89,4 +109,73 @@ margin-right: 20%;
 #OnePiece-Text a {
   text-decoration: none;
   color: black;
+}
+
+.navbar {
+  width: 5rem;
+  height: 100vh;
+  position: fixed;
+  background-color: rgb(0, 0, 60);
+  transition: width 200ms ease;
+}
+
+.navbar ul {
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.navbar ul li {
+  width: 100%;
+}
+
+.navbar ul li a {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  color: white;
+  text-decoration: none;
+  filter: grayscale(100%) opacity(0.7);
+  transition: 200ms ease;
+}
+
+.navbar ul li a span {
+  display: none;
+  margin-left: 1rem;
+  margin-right: 4rem;
+}
+
+.navbar ul li a svg {
+  min-width: 2rem;
+  margin: 0 1.5rem;
+  fill: white;
+}
+
+/*damit der letzte anker in der Liste ganz unten steht*/
+.navbar ul li:last-child {
+  margin-top: 50vh;
+}
+
+.navbar:hover {
+  width: 12rem;
+}
+
+/*damit die Navigationsleiste interaktiver wirkt*/
+.navbar ul li a:hover {
+  filter: grayscale(0%) opacity(1);
+  background: rgb(0,0,90);
+  color: rgb(121, 246, 255);
+}
+
+/*damit die Icons eine andere Farbe bekommen*/
+.navbar ul li a svg {
+  filter: grayscale(0%) opacity(1);
+  fill: rgb(121, 246, 255);
+}
+
+.navbar:hover ul li a span {
+  display: block;
 }
