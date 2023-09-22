@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anime Blog</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <!--ist die bessere Methode für Navigationsleiste-->
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a href="index.html">
+            <!--Ein Icon svg kopiert von font awesome-->
+            <svg id="Icon" xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg>
+            <span>Home</span>
+          </a>
+        </li>
+        <li>
+          <!--die restlichen kopien sind platz halter-->
+          <a href="aot.html">
+            <svg id="Icon" xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M448 32H361.9l-1 1-127 127h92.1l1-1L453.8 32.3c-1.9-.2-3.8-.3-5.8-.3zm64 128V96c0-15.1-5.3-29.1-14-40l-104 104H512zM294.1 32H201.9l-1 1L73.9 160h92.1l1-1 127-127zM64 32C28.7 32 0 60.7 0 96v64H6.1l1-1 127-127H64zM512 192H0V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V192z"/></svg>
+            <span>AoT</span>
+          </a>
+        </li>
+        <li>
+          <a href="sololvl.html">
+            <svg id="Icon" xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M448 32H361.9l-1 1-127 127h92.1l1-1L453.8 32.3c-1.9-.2-3.8-.3-5.8-.3zm64 128V96c0-15.1-5.3-29.1-14-40l-104 104H512zM294.1 32H201.9l-1 1L73.9 160h92.1l1-1 127-127zM64 32C28.7 32 0 60.7 0 96v64H6.1l1-1 127-127H64zM512 192H0V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V192z"/></svg>
+            <span>Solo Leveling</span>
+          </a>
+        </li>
+        <li>
+          <a href="vinland.html">
+            <svg id="Icon" xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M448 32H361.9l-1 1-127 127h92.1l1-1L453.8 32.3c-1.9-.2-3.8-.3-5.8-.3zm64 128V96c0-15.1-5.3-29.1-14-40l-104 104H512zM294.1 32H201.9l-1 1L73.9 160h92.1l1-1 127-127zM64 32C28.7 32 0 60.7 0 96v64H6.1l1-1 127-127H64zM512 192H0V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V192z"/></svg>
+            <span>Vinland Saga</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://gymmu.github.io/gym-inf/#index">
+            <svg id="Icon" xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg>
+            <span>IT-Gym</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div class="background">
+        <div class="Site-Title">
+          <h1>One Piece</h1>
+          <!--iframe benutzte ich damit ich ein Youtube Video einfügen kann, es wird durch Youtube einbetten generiert-->
+          <iframe src="https://www.youtube.com/embed/Ades3pQbeh8?si=IWx30blEd28IpGFM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div id="Site-Text">
+          <!--Disen Text habe ich mit Bard KI erstelt prompt ist : mache einen Blog Post über den One Piece Live Aktion, nach dem er veröffentlicht wurde-->
+          <br>
+          <h3>One Piece Live Action: Erste Eindrücke</h3>
+          <p>Am 31. August 2023 wurde die erste Staffel der One Piece Live Action auf Netflix veröffentlicht. Die Serie basiert auf dem beliebten Manga und Anime und umfasst acht Folgen.</p>
+          <h3>Die ersten Eindrücke</h3>
+          <p>Die Serie wurde von den Fans der Originalserie mit gemischten Reaktionen aufgenommen. Einige Fans sind von der Umsetzung begeistert, während andere enttäuscht sind.</p>
+          <h3>Die positiven Aspekte</h3>
+          <p>Die Serie ist actionreich und spannend. Die CGI-Effekte sind gut gelungen und die Kostüme und Kulissen sind detailliert. Die Schauspieler geben sich Mühe, den Charakteren der Originalserie gerecht zu werden.</p>
+          <h3>Die negativen Aspekte</h3>
+          <p>Die Serie ist nicht immer detailgetreu. Einige Fans bemängeln, dass die Serie einige wichtige Elemente der Originalserie ausgelassen hat.</p>
+          <h3>Fazit</h3>
+          <p>Die One Piece Live Action ist eine solide Umsetzung der beliebten Serie. Die Serie ist actionreich und spannend, aber nicht immer detailgetreu.</p>
+          <h3>Mögliche Verbesserungen</h3>
+          <p>Die Serie könnte in Zukunft noch verbessert werden, indem sie:</p>
+          <ul>
+            <li>Mehr Details aus der Originalserie übernimmt.</li>
+            <li>Die Charakterentwicklung weiter ausbaut.</li>
+            <li>Die Handlung etwas entschleunigt.</li>
+          </ul>
+          <h3>Empfehlung</h3>
+          <p>Die One Piece Live Action ist eine gute Möglichkeit, die Welt von One Piece zu erleben. Die Serie ist zwar nicht perfekt, aber sie ist dennoch unterhaltsam.</p>
+          <h3>Bewertung</h3>
+          <p>4 von 5 Sternen</p>
+          <br>
+        </div>
+      </div>
+    </main>
+</body>
